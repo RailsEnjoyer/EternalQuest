@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EternalQuest</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "main", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <header class="container">
+    <nav class="header tavern-sign">
+        <ul class="tavern-name">Eternal Quest</ul>
+        <div class="navigation">
+            <ul>Main</ul>
+            <ul>About</ul>
+            <ul>Shop</ul>
+            <ul>News</ul>
+            <ul>Support</ul>
+        </div>
+    </nav>
+    <nav class="header navigation">
+        <ul>Log in</ul>
+        <ul>Sign in</ul>
+    </nav>
+  </header>
+
+  <body>
+    <%= yield %>
+  </body>
+
+  <footer>
+  </footer>
+</html>
